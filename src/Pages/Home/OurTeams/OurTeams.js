@@ -7,57 +7,96 @@ const OurTeams = () => {
             <div className="overlay"></div>
             <Container>
                 <Row>
-                    <h1 className="text-white" style={{ zIndex: 10 }}>Our Team</h1>
+                    <h1 className="text-white" style={{ zIndex: 10 }}>7 Wonders Of The World!!</h1>
                     <Row xs={1} md={4} className="g-4">
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="https://i.ibb.co/cJXHcP3/agent-3.jpg" />
+                                <Card.Img variant="top" src="https://i.ibb.co/VpLMgFS/Background.png" />
                                 <Card.Body>
-                                    <Card.Title>Mikal clark</Card.Title>
+                                    <Card.Title>1. Ha Long Bay</Card.Title>
                                     <Card.Text>
-                                        CEO
+                                          Vietnam
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="https://i.ibb.co/C1hScj0/Background-1.png" />
+                                <Card.Body>
+                                    <Card.Title>2. The Colosseum</Card.Title>
+                                    <Card.Text>
+                                        Italy
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="https://i.ibb.co/HF5csHt/agent-4.jpg" />
+                                <Card.Img variant="top" src="https://i.ibb.co/3krXm8F/Background-2.png" />
                                 <Card.Body>
-                                    <Card.Title>Jhon Jha</Card.Title>
+                                    <Card.Title>3. The Amazon</Card.Title>
                                     <Card.Text>
-                                        Flight Agent
+                                       South America
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="https://i.ibb.co/kh45Bqx/agent-2.jpg" />
+                                <Card.Img variant="top" src="https://i.ibb.co/4MFK9fK/Background-3.png" />
                                 <Card.Body>
-                                    <Card.Title>Eachann Jhon</Card.Title>
+                                    <Card.Title>4. The pyramids of Giza</Card.Title>
                                     <Card.Text>
-                                        Hotel Agent
+                                    Egypt
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="https://i.ibb.co/k20xrMc/agent-1.jpg" />
+                                <Card.Img variant="top" src="https://i.ibb.co/R0d6cCD/Background-4.png" />
                                 <Card.Body>
-                                    <Card.Title>Jhimi</Card.Title>
+                                    <Card.Title> 5. Taj Mahal</Card.Title>
                                     <Card.Text>
-                                        Cruise Agent
+                                          India 
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="https://i.ibb.co/4pK5QKP/Background-5.png" />
+                                <Card.Body>
+                                    <Card.Title> 6. Angkor Wat </Card.Title>
+                                    <Card.Text>
+                                        Cambodia
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="https://i.ibb.co/HB4drjc/Background-6.png" />
+                                <Card.Body>
+                                    <Card.Title> 7. Grand Canyon </Card.Title>
+                                    <Card.Text>
+                                      USA 
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
                     </Row>
                 </Row>
             </Container>
         </div>
+
+        
     );
 };
 
 export default OurTeams;
+
+

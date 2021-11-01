@@ -12,14 +12,14 @@ const OrderService = () => {
     const history = useHistory();
     console.log(id);
     useEffect(() => {
-        const url = ` https://grisly-fangs-89831.herokuapp.com/services/${id}`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/services/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
                 setProduct(data);
                 setIsLodaing(false)
-            });
-    }, []);
+            })
+    }, [])
     console.log(product);
     const handelBookingProcess = (e) => {
         e.preventDefault();
@@ -51,7 +51,7 @@ const OrderService = () => {
             address: address,
             status: 'Pending'
         };
-        fetch(` https://grisly-fangs-89831.herokuapp.com/booking`, {
+        fetch(`https://grisly-fangs-89831.herokuapp.com/books`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -74,7 +74,7 @@ const OrderService = () => {
             <Row>
                 <Col md={7}>
                     <Card>
-                        <Card.Img variant="top" src={product.img_url} />
+                    <Card.Img variant="top" src={product.img_url} />
                         <Card.Body>
                             {
                                 product.type === 'hotel' ?
@@ -115,9 +115,9 @@ const OrderService = () => {
                                                     <small>{product.days} NIGHTS</small>
                                                 </div>
                                             </Col>
-                                            <Col md={6} className="text-end">
-                                                <p className="m-0"><small>Price</small></p>
-                                                <small className="text-success"><b>${product.price}</b></small>
+                                             <Col md={6} className="text-end">
+                                             <p className="m-0"><small>Price</small></p>
+                                                 <small className="text-success"><b>${product.price}</b></small>
                                             </Col>
                                         </Row>
                                         <Row className="mt-2">

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Container, Row, Spinner } from 'react-bootstrap';
 import './AddService.css';
 const AddService = () => {
@@ -66,7 +66,7 @@ const AddService = () => {
             date: date,
             img_url: img_url,
         };
-        fetch(" https://grisly-fangs-89831.herokuapp.com/services", {
+        fetch(`https://grisly-fangs-89831.herokuapp.com/services`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",

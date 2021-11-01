@@ -6,7 +6,7 @@ const MyOrder = (props) => {
     const [orderProduct, setOrderProduct] = useState([]);
     const [isLoading, setIsLodaing] = useState(true);
     useEffect(() => {
-        const url = ` https://grisly-fangs-89831.herokuapp.com/services/${serviceId}`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/services/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

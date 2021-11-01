@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect } from "react";
 import firebaseInitConfige from "../Pages/Firebase/firebase.init";
 firebaseInitConfige()
@@ -10,12 +10,20 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const googleProvider = new GoogleAuthProvider();
+    const gitHubProvider = new GithubAuthProvider();
 
     const signInWithGoogle = () => {
         setIsLodaing(true);
         return signInWithPopup(auth, googleProvider);
 
     }
+  
+    const signInWithGitHub = () => {
+        setIsLodaing(true);
+        return signInWithPopup(auth, gitHubProvider);
+
+    }    
+   
     const logOut = () => {
         setIsLodaing(true);
         signOut(auth).then(() => {
@@ -43,6 +51,7 @@ const useFirebase = () => {
         error,
         logOut,
         signInWithGoogle,
+        signInWithGitHub,
         setError,
     }
 }

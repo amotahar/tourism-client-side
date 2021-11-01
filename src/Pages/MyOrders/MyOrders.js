@@ -10,10 +10,12 @@ const MyOrders = () => {
     const [isLoading, setIsLodaing] = useState(true);
 
     useEffect(() => {
-        const url = ` https://grisly-fangs-89831.herokuapp.com/my-orders/${user.uid}`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/my-orders/${user.uid}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
+                // orderProducts();
+                // setOrderProducts();
                 setOrders(data);
                 setIsLodaing(false);
             });
@@ -22,7 +24,7 @@ const MyOrders = () => {
     const removeOrder = (id) => {
         const proceed = window.confirm('Are you sure,you want to delete this item?');
         if (proceed) {
-            const url = ` https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
+            const url = `https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

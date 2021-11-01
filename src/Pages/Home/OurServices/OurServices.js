@@ -8,7 +8,7 @@ const OurServices = () => {
     const [isLoading, setIsLodaing] = useState(true);
 
     useEffect(() => {
-        fetch(` https://grisly-fangs-89831.herokuapp.com/service_types`)
+        fetch(`https://grisly-fangs-89831.herokuapp.com/service_types`)
             .then(res => res.json())
             .then(data => {
                 setserviceTypes(data);

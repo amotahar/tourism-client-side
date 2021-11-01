@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Flight.css';
 const Flight = (props) => {
     const { _id, title, place, price, img_url } = props.flight;
-    const { handelBookSystem, bookLoading } = props;
+    const {  bookLoading } = props;
     return (
         <Col>
             <Card>

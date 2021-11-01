@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import useAuth from '../../../Hooks/useAuth';
 import Cruise from './Cruise/Cruise';
 import Flight from './Flight/Flight';
@@ -15,7 +15,7 @@ const Services = () => {
     const [bookLoading, setBookLodaing] = useState(false);
     console.log(user.uid);
     useEffect(() => {
-        fetch(" https://grisly-fangs-89831.herokuapp.com/services")
+        fetch(`https://grisly-fangs-89831.herokuapp.com/services`)
             .then(res => res.json())
             .then(data => {
                 // filter hotel type of service and set
@@ -39,7 +39,7 @@ const Services = () => {
             serviceId: id,
             userId: user.uid,
         }
-        fetch(" https://grisly-fangs-89831.herokuapp.com/booking", {
+        fetch(`https://grisly-fangs-89831.herokuapp.com/books`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",

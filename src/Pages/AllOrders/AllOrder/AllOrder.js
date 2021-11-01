@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 
 const AllOrder = (props) => {
-    const { _id, serviceId, status, userId, name, email, address } = props.order;
+    const { _id, serviceId, status,} = props.order;
+    //userId, name, email, address
     const { removeOrder } = props;
     const [orderProduct, setOrderProduct] = useState([]);
     const [isLoading, setIsLodaing] = useState(true);
     useEffect(() => {
-        const url = ` https://grisly-fangs-89831.herokuapp.com/services/${serviceId}`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/services/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -26,7 +27,7 @@ const AllOrder = (props) => {
         const order = {
             status: updateStatus
         };
-        const url = ` https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {

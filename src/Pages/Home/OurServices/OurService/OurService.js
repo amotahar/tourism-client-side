@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, } from 'react-bootstrap';
 import './OurService.css';
 const OurService = (props) => {
     const { img, title } = props.type;

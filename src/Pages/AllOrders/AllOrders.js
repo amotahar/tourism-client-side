@@ -7,7 +7,7 @@ const AllOrders = () => {
     const [orders, setOrders] = useState([]);
     const [isLoading, setIsLodaing] = useState(true);
     useEffect(() => {
-        const url = ` https://grisly-fangs-89831.herokuapp.com/all-orders`;
+        const url = `https://grisly-fangs-89831.herokuapp.com/all-orders`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -19,7 +19,7 @@ const AllOrders = () => {
     const removeOrder = (id) => {
         const proceed = window.confirm('Are you sure,you want to delete this item?');
         if (proceed) {
-            const url = ` https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
+            const url = `https://grisly-fangs-89831.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })
