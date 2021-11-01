@@ -1,0 +1,19 @@
+.our-team{
+    background-image: url('https://i.ibb.co/m9Dm2SC/team-bg-a645b7bf9192afc065b4.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}

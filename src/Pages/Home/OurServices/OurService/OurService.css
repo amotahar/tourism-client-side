@@ -1,0 +1,10 @@
+.service-title{
+    padding: 5px;
+    background: rgb(61 54 56 / 50%);
+}
+.our-services .card{
+    height:200px;
+}
+.our-services .card-img{
+    height:100%;
+}

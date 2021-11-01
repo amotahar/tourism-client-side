@@ -1,0 +1,11 @@
+.services{
+    padding: 25px 0px;
+}
+.services h3{
+    color: #01b7f2;
+    border: 1px solid #50d4ff;
+    padding: 10px;
+}
+.services .card-img-top{
+    height: 150px;
+}
